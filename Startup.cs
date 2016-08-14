@@ -28,10 +28,10 @@ namespace CleanShave
         public void ConfigureServices(IServiceCollection services)
         {
            services.AddGlimpse(); 
-          services.Configure<SiteSettings>(settings =>
-            {
+        //   services.Configure<SiteSettings>(settings =>
+        //     {
 
-            });
+        //     });
 
             // Add MVC services to the services container.
             services.AddMvc().AddJsonOptions(options =>
@@ -58,7 +58,7 @@ namespace CleanShave
                 app.UseExceptionHandler("/Home/Error");
             }
 
-            app.UseIISPlatformHandler();
+     //app.UseIISPlatformHandler();
 
             app.UseStaticFiles();
 
